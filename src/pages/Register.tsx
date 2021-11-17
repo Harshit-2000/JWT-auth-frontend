@@ -11,7 +11,7 @@ const Register = () => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        await fetch('http://jwt-token-api-2000.herokuapp.com/api/register', {
+        await fetch('https://jwt-token-api-2000.herokuapp.com/api/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

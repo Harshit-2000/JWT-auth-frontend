@@ -9,7 +9,7 @@ const Login = (props: { setName: (name: string) => void }) => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        const response = await fetch('http://jwt-token-api-2000.herokuapp.com/api/login', {
+        const response = await fetch('https://jwt-token-api-2000.herokuapp.com/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

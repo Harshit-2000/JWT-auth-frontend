@@ -7,7 +7,7 @@ const Home = (props: { name: string }) => {
     const [userdata, setUserdata] = useState([])
 
     async function deleteData(id: string) {
-        const response = await fetch('http://jwt-token-api-2000.herokuapp.com/api/delete/' + id, {
+        const response = await fetch('https://jwt-token-api-2000.herokuapp.com/api/delete/' + id, {
             method: 'DELETE',
         });
 
@@ -21,7 +21,7 @@ const Home = (props: { name: string }) => {
 
 
     const fetchdata = async () => {
-        const response = await fetch('http://jwt-token-api-2000.herokuapp.com/api/users', {
+        const response = await fetch('https://jwt-token-api-2000.herokuapp.com/api/users', {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

@@ -10,7 +10,7 @@ function Update(props: any) {
 
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
-        await fetch('http://jwt-token-api-2000.herokuapp.com/api/update/' + props.match.params.id, {
+        await fetch('https://jwt-token-api-2000.herokuapp.com/api/update/' + props.match.params.id, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

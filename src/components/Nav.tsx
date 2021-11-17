@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = (props: { name: string, setName: (name: string) => void }) => {
     const logout = async () => {
-        await fetch('http://jwt-token-api-2000.herokuapp.com/api/logout', {
+        await fetch('https://jwt-token-api-2000.herokuapp.com/api/logout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include',

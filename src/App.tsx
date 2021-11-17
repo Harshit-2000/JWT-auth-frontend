@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         (
             async () => {
-                const response = await fetch('http://jwt-token-api-2000.herokuapp.com/api/user', {
+                const response = await fetch('https://jwt-token-api-2000.herokuapp.com/api/user', {
                     headers: { 'Content-Type': 'application/json' },
                     credentials: 'include',
                 });
